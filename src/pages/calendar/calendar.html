@@ -1,0 +1,357 @@
+<!--
+  Generated template for the CalendarPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+</ion-header>
+
+
+<ion-content class="theme-primary">
+  <slides #mainNavSlides class="main-navigation" (slideChangeTransitionStart)="mainNavChaingeStart($event)">
+    <slide>
+      <h2 class="primary">BASIC</h2>
+    </slide>
+    <slide>
+      <h2 class="secondary">UNDERSTAND</h2>
+    </slide>
+    <slide>
+      <h2 class="third">PRO</h2>
+    </slide>
+    <slide>
+        <h2 class="fourth">EXPERT</h2>
+      </slide>
+    <slide>
+      <h2 class="fifth">GET A JOB</h2>
+    </slide>
+    <slide>
+      <h2 class="sixth">MODULE</h2>
+    </slide>
+    <slide>
+      <h2 class="seven">MUSIC</h2>
+    </slide>
+    <slide>
+        <h2 class="eight">DEVELOP</h2>
+    </slide>
+  </slides>
+  <div class="main-nav-background-bar"></div>
+  <slides #mainNavDotSlides class="main-navigation-dots" (slideChangeTransitionStart)="mainNavDotChaingeStart($event)">
+    <slide>
+      <div class="main-nav-dot primary"></div>
+    </slide>
+    <slide>
+      <div class="main-nav-dot secondary"></div>
+    </slide>
+    <slide>
+      <div class="main-nav-dot third"></div>
+    </slide>
+    <slide>
+      <div class="main-nav-dot fourth"></div>
+    </slide>
+    <slide>
+      <div class="main-nav-dot fifth"></div>
+    </slide>
+    <slide>
+      <div class="main-nav-dot sixth"></div>
+    </slide>
+    <slide>
+        <div class="main-nav-dot seven"></div>
+    </slide>
+    <slide>
+        <div class="main-nav-dot eight"></div>
+    </slide>
+  </slides>
+  <slides #subNavSlides *ngIf="activeIndex == 0" class="sub-navigation primary" slidesPerView="2" centeredSlides="true"
+  (slideChangeTransitionStart)="subNavChaingeStart($event)">
+    <slide>video</slide>
+    <slide>motion</slide>
+    <slide>design</slide>
+    <slide>painting</slide>
+  </slides>
+  <slides #subNavSlides *ngIf="activeIndex == 1" class="sub-navigation secondary" slidesPerView="2" centeredSlides="true"
+  (slideChangeTransitionStart)="subNavChaingeStart($event)">
+      <slide>video</slide>
+      <slide>motion</slide>
+      <slide>design</slide>
+      <slide>painting</slide>
+  </slides>
+  <slides #subNavSlides *ngIf="activeIndex == 2" class="sub-navigation third" slidesPerView="2" centeredSlides="true"
+  (slideChangeTransitionStart)="subNavChaingeStart($event)">
+      <slide>video</slide>
+      <slide>motion</slide>
+      <slide>design</slide>
+      <slide>painting</slide>
+  </slides>
+  <slides #subNavSlides *ngIf="activeIndex == 3" class="sub-navigation fourth" slidesPerView="2" centeredSlides="true"
+  (slideChangeTransitionStart)="subNavChaingeStart($event)">
+      <slide>video</slide>
+      <slide>motion</slide>
+      <slide>design</slide>
+      <slide>painting</slide>
+  </slides>
+  <slides #subNavSlides *ngIf="activeIndex == 4" class="sub-navigation fifth" slidesPerView="2" centeredSlides="true"
+  (slideChangeTransitionStart)="subNavChaingeStart($event)">
+      <slide>video</slide>
+      <slide>motion</slide>
+      <slide>design</slide>
+      <slide>painting</slide>
+  </slides>
+  <slides *ngIf="activeIndex == 5" class="sub-navigation sixth" slidesPerView="2" centeredSlides="true"
+  (slideChangeTransitionStart)="subNavChaingeStart($event)">
+      <slide>video</slide>
+      <slide>motion</slide>
+      <slide>design</slide>
+      <slide>painting</slide>
+  </slides>
+  <slides *ngIf="activeIndex == 6" class="sub-navigation seven" slidesPerView="2" centeredSlides="true"
+  (slideChangeTransitionStart)="subNavChaingeStart($event)">
+      <slide>video</slide>
+      <slide>motion</slide>
+      <slide>design</slide>
+      <slide>painting</slide>
+  </slides>
+  <slides *ngIf="activeIndex == 7" class="sub-navigation eight" slidesPerView="2" centeredSlides="true"
+  (slideChangeTransitionStart)="subNavChaingeStart($event)">
+      <slide>video</slide>
+      <slide>motion</slide>
+      <slide>design</slide>
+      <slide>painting</slide>
+  </slides>
+  <div class="main-nav-background-bar"></div>
+  <slides #subNavDotSlides *ngIf="activeIndex == 0" class="main-navigation-dots" (slideChangeTransitionStart)="subNavDotChaingeStart($event)">
+    <slide>
+      <div class="main-nav-dot primary"></div>
+    </slide>
+    <slide>
+      <div class="main-nav-dot primary"></div>
+    </slide>
+    <slide>
+      <div class="main-nav-dot primary"></div>
+    </slide>
+    <slide>
+      <div class="main-nav-dot primary"></div>
+    </slide>
+    <slide>
+      <div class="main-nav-dot primary"></div>
+    </slide>
+    <slide>
+      <div class="main-nav-dot primary"></div>
+    </slide>
+    <slide>
+      <div class="main-nav-dot primary"></div>
+    </slide>
+    <slide>
+       <div class="main-nav-dot primary"></div>
+    </slide>
+  </slides>
+  <slides #subNavDotSlides *ngIf="activeIndex == 1" class="main-navigation-dots" (slideChangeTransitionStart)="subNavDotChaingeStart($event)">
+      <slide>
+        <div class="main-nav-dot secondary"></div>
+      </slide>
+      <slide>
+        <div class="main-nav-dot secondary"></div>
+      </slide>
+      <slide>
+        <div class="main-nav-dot secondary"></div>
+      </slide>
+      <slide>
+        <div class="main-nav-dot secondary"></div>
+      </slide>
+      <slide>
+        <div class="main-nav-dot secondary"></div>
+      </slide>
+      <slide>
+        <div class="main-nav-dot secondary"></div>
+      </slide>
+      <slide>
+        <div class="main-nav-dot secondary"></div>
+      </slide>
+      <slide>
+         <div class="main-nav-dot secondary"></div>
+      </slide>
+    </slides>
+    <slides #subNavDotSlides *ngIf="activeIndex == 2" class="main-navigation-dots" (slideChangeTransitionStart)="subNavDotChaingeStart($event)">
+        <slide>
+          <div class="main-nav-dot third"></div>
+        </slide>
+        <slide>
+          <div class="main-nav-dot third"></div>
+        </slide>
+        <slide>
+          <div class="main-nav-dot third"></div>
+        </slide>
+        <slide>
+          <div class="main-nav-dot third"></div>
+        </slide>
+        <slide>
+          <div class="main-nav-dot third"></div>
+        </slide>
+        <slide>
+          <div class="main-nav-dot third"></div>
+        </slide>
+        <slide>
+          <div class="main-nav-dot third"></div>
+        </slide>
+        <slide>
+           <div class="main-nav-dot third"></div>
+        </slide>
+      </slides>
+      <slides #subNavDotSlides *ngIf="activeIndex == 3" class="main-navigation-dots" (slideChangeTransitionStart)="subNavDotChaingeStart($event)">
+          <slide>
+            <div class="main-nav-dot fourth"></div>
+          </slide>
+          <slide>
+            <div class="main-nav-dot fourth"></div>
+          </slide>
+          <slide>
+            <div class="main-nav-dot fourth"></div>
+          </slide>
+          <slide>
+            <div class="main-nav-dot fourth"></div>
+          </slide>
+          <slide>
+            <div class="main-nav-dot fourth"></div>
+          </slide>
+          <slide>
+            <div class="main-nav-dot fourth"></div>
+          </slide>
+          <slide>
+            <div class="main-nav-dot fourth"></div>
+          </slide>
+          <slide>
+             <div class="main-nav-dot fourth"></div>
+          </slide>
+        </slides>
+        <slides #subNavDotSlides *ngIf="activeIndex == 4" class="main-navigation-dots" (slideChangeTransitionStart)="subNavDotChaingeStart($event)">
+            <slide>
+              <div class="main-nav-dot fifth"></div>
+            </slide>
+            <slide>
+              <div class="main-nav-dot fifth"></div>
+            </slide>
+            <slide>
+              <div class="main-nav-dot fifth"></div>
+            </slide>
+            <slide>
+              <div class="main-nav-dot fifth"></div>
+            </slide>
+            <slide>
+              <div class="main-nav-dot fifth"></div>
+            </slide>
+            <slide>
+              <div class="main-nav-dot fifth"></div>
+            </slide>
+            <slide>
+              <div class="main-nav-dot fifth"></div>
+            </slide>
+            <slide>
+               <div class="main-nav-dot fifth"></div>
+            </slide>
+          </slides>
+          <slides #subNavDotSlides *ngIf="activeIndex == 5" class="main-navigation-dots" (slideChangeTransitionStart)="subNavDotChaingeStart($event)">
+              <slide>
+                <div class="main-nav-dot sixth"></div>
+              </slide>
+              <slide>
+                <div class="main-nav-dot sixth"></div>
+              </slide>
+              <slide>
+                <div class="main-nav-dot sixth"></div>
+              </slide>
+              <slide>
+                <div class="main-nav-dot sixth"></div>
+              </slide>
+              <slide>
+                <div class="main-nav-dot sixth"></div>
+              </slide>
+              <slide>
+                <div class="main-nav-dot sixth"></div>
+              </slide>
+              <slide>
+                <div class="main-nav-dot sixth"></div>
+              </slide>
+              <slide>
+                 <div class="main-nav-dot sixth"></div>
+              </slide>
+            </slides>
+            <slides #subNavDotSlides *ngIf="activeIndex == 6" class="main-navigation-dots" (slideChangeTransitionStart)="subNavDotChaingeStart($event)">
+                <slide>
+                  <div class="main-nav-dot seven"></div>
+                </slide>
+                <slide>
+                  <div class="main-nav-dot seven"></div>
+                </slide>
+                <slide>
+                  <div class="main-nav-dot seven"></div>
+                </slide>
+                <slide>
+                  <div class="main-nav-dot seven"></div>
+                </slide>
+                <slide>
+                  <div class="main-nav-dot seven"></div>
+                </slide>
+                <slide>
+                  <div class="main-nav-dot seven"></div>
+                </slide>
+                <slide>
+                  <div class="main-nav-dot seven"></div>
+                </slide>
+                <slide>
+                   <div class="main-nav-dot seven"></div>
+                </slide>
+              </slides>
+              <slides #subNavDotSlides *ngIf="activeIndex == 7" class="main-navigation-dots" (slideChangeTransitionStart)="subNavDotChaingeStart($event)">
+                  <slide>
+                    <div class="main-nav-dot eight"></div>
+                  </slide>
+                  <slide>
+                    <div class="main-nav-dot eight"></div>
+                  </slide>
+                  <slide>
+                    <div class="main-nav-dot eight"></div>
+                  </slide>
+                  <slide>
+                    <div class="main-nav-dot eight"></div>
+                  </slide>
+                  <slide>
+                    <div class="main-nav-dot eight"></div>
+                  </slide>
+                  <slide>
+                    <div class="main-nav-dot eight"></div>
+                  </slide>
+                  <slide>
+                    <div class="main-nav-dot eight"></div>
+                  </slide>
+                  <slide>
+                     <div class="main-nav-dot eight"></div>
+                  </slide>
+                </slides>
+                <slides class="main-card-navigation">
+                  <slide><div class="main-card" [ngClass]="activeIndexColor()">
+                  <div>수강생 야야야야야</div>
+                  <div>수강생 야야야야야</div>
+                  <div>수강생 야야야야야</div>
+                  <div>수강생 야야야야야</div>
+                  </div></slide>
+                  <slide><div class="main-card" [ngClass]="activeIndexColor()"></div></slide>
+                  <slide><div class="main-card" [ngClass]="activeIndexColor()"></div></slide>
+                </slides>
+  <div>
+    <div class="bottom-dats">
+      <div class="bottom-dot-button"></div>
+      수강생 현황
+    </div>
+    <div>
+      <div class="bottom-dot-button"></div>
+      캘린터
+    </div>
+    <div>
+      <div class="bottom-dot-button"></div>
+      커리큘럼
+    </div>
+    <div class="bottom-dot-slider">
+      <div class="bottom-dot active"></div>
+    </div>
+  </div>
+</ion-content>

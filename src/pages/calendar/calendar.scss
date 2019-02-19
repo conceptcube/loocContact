@@ -1,0 +1,86 @@
+page-calendar {
+  $theme: (
+    primary:    color($colors, primary),
+    secondary:  color($colors, secondary),
+    third:      color($colors, third),
+    fourth:     color($colors, fourth),
+    fifth:      color($colors, fifth),
+    sixth:      color($colors, sixth),
+    seven:      color($colors, seven),
+    eight:      color($colors, eight),
+    );
+
+  @each $key, $color in $theme {
+    .theme-#{$key} {}
+
+    .main-navigation {
+      .swiper-container {
+        height: 5.5rem;
+        padding-top: 1.5rem;
+
+        h2 {
+          font-size: $font-size-l;
+          font-weight: $font-weight-bold;
+
+          &.#{$key} {
+            color: $color;
+          }
+        }
+      }
+
+      
+    }
+    .main-nav-background-bar {
+        border-top: .1rem solid #c9c9c9;
+        margin-top: .4rem;
+        height: .1rem;
+        width: 100%;
+        margin-bottom: -.5rem;
+      }
+
+      .main-navigation-dots {
+        .swiper-container {
+          height: 3rem;
+          padding-bottom: 2rem;
+        }
+
+        .main-nav-dot {
+          width: .8rem;
+          height: .8rem;
+          border-radius: .4rem;
+          position: relative;
+          z-index: 2;
+          margin: auto;
+
+          &.#{$key} {
+            background-color: $color;
+          }
+        }
+      }
+      .sub-navigation {
+        .swiper-container {
+            height: 3rem;
+        }
+        &.#{$key} {
+            color: $color;
+          }
+      }
+      .main-card-navigation{
+        .swiper-container {
+            height: auto;
+        }
+      }
+      .main-card{
+          width: calc(100% - 3.2rem);
+          margin-left: 1.6rem;
+          height: 0;
+          padding-bottom: calc(120% - 3.2rem);
+          border-radius: 1.6rem;
+        &.#{$key}{
+            background-color: $color;
+        }
+      }
+  }
+}
+
+//영역 패딩으로 조절
